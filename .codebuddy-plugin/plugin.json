@@ -1,0 +1,14 @@
+{
+  "name": "multi-ai-orchestrator",
+  "version": "0.2.1",
+  "description": "Visible multi-AI teams with recursive supervision and Codex background coordination",
+  "description_zh": "主调度 AI 协调调研、执行、验收和其他外部 AI；支持任意层级上下级、独立对话、完整记录、随机分配、CLI 与 HTTP 适配和 Codex 双向协作",
+  "description_en": "A WorkBuddy skill for visible multi-agent teams with recursive supervision, native Agent and SendMessage communication, transcript audit, external CLI and HTTP AI adapters, verification, and two-way Codex handoff.",
+  "author": {
+    "name": "Zhang Jun"
+  },
+  "license": "MIT",
+  "skills": [
+    "."
+  ]
+}

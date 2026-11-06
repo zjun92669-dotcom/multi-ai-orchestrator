@@ -1,0 +1,31 @@
+{
+  "agents": {
+    "codex-cli": {
+      "transport": "cli",
+      "kind": "coding_agent",
+      "command": [
+        "C:\\Users\\33554\\AppData\\Local\\OpenAI\\Codex\\bin\\cf48bb65779b3399\\codex.exe",
+        "exec",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "workspace-write",
+        "--json",
+        "-C",
+        "${WORKSPACE}",
+        "-"
+      ],
+      "cwd": "${WORKSPACE}",
+      "timeout_seconds": 600
+    },
+    "generic-http-ai": {
+      "transport": "http",
+      "kind": "external_agent",
+      "url": "${EXTERNAL_AI_URL}",
+      "method": "POST",
+      "headers": {
+        "authorization": "Bearer ${EXTERNAL_AI_API_KEY}"
+      },
+      "timeout_seconds": 600
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "trace_id": "codex-20261106-001",
+  "team_name": "delivery-team",
+  "root_supervisor": "dispatcher",
+  "agents": [
+    {
+      "agent_id": "dispatcher",
+      "name": "dispatcher",
+      "role": "dispatch",
+      "supervisor_id": "user",
+      "thread_ref": "workbuddy-task:main",
+      "status": "running"
+    },
+    {
+      "agent_id": "research-agent",
+      "name": "research-agent",
+      "role": "research",
+      "supervisor_id": "dispatcher",
+      "thread_ref": "workbuddy-agent:research-agent",
+      "status": "waiting"
+    },
+    {
+      "agent_id": "execution-agent",
+      "name": "execution-agent",
+      "role": "execution",
+      "supervisor_id": "dispatcher",
+      "thread_ref": "workbuddy-agent:execution-agent",
+      "status": "waiting"
+    },
+    {
+      "agent_id": "qa-agent",
+      "name": "qa-agent",
+      "role": "qa",
+      "supervisor_id": "dispatcher",
+      "thread_ref": "workbuddy-agent:qa-agent",
+      "status": "waiting"
+    }
+  ]
+}
